@@ -1,6 +1,6 @@
 #questions {
   background-color: #fff;
-  max-height: 200px;
+  max-height: 60%;
   overflow-y: auto;
   font-style: italic;
   padding: 15px;
@@ -39,4 +39,7 @@ p {
 
 #title {
   margin: 0 0 10px 0;
+}
+
+@media (max-width: 600px) {
 }

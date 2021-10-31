@@ -11,6 +11,8 @@ import { MenuItemComponent } from './home/components/menu-item/menu-item.compone
 import { QuestionsComponent } from './home/components/questions/questions.component';
 import { CommentComponent } from './home/components/comment/comment.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatExpansionModule,
+    MatIconModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,7 +4,15 @@
     tortor tempus molestie. Orci varius natoque penatibus et magnis dis
     parturient montes, nascetur ridiculus mus.
   </p>
-  <div id="sub-menu-footer">
+  <div id="sub-menu-footer" mat-button [matMenuTriggerFor]="subMenu">
     <p>Sub menú</p>
+    <div id="button"></div>
   </div>
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Sub menú</button>
+    <button mat-menu-item>Sub menú</button>
+    <button mat-menu-item>Sub menú</button>
+    <button mat-menu-item>Sub menú</button>
+  </mat-menu>
 </footer>

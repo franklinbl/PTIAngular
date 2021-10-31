@@ -4,10 +4,11 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #img-foot {
-  width: 45%;
+  width: 60%;
   height: 100%;
   background-image: url("../../../../assets/foot.jpg");
   background-size: cover;
@@ -50,5 +51,27 @@
     width: 40%;
     height: 35px;
     cursor: pointer;
+  }
+  button:hover {
+    background: #2440ff;
+    border: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  #container-foot {
+    height: 500px;
+  }
+
+  #container-description {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  #container-calification {
+    p {
+      font-size: 0.8em;
+    }
   }
 }
