@@ -1,0 +1,42 @@
+#questions {
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  font-style: italic;
+  padding: 15px;
+}
+
+#questions::-webkit-scrollbar {
+  width: 6px;
+  height: 1px;
+}
+
+#questions::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+p {
+  color: #d3d0d0;
+}
+
+.text-description {
+  color: black;
+}
+
+.mat-expansion-panel {
+  box-shadow: none !important;
+  p {
+    font-size: 1em;
+  }
+}
+
+.mat-expansion-panel-header,
+#title {
+  padding: 0 10px !important;
+  transition: none !important;
+}
+
+#title {
+  margin: 0 0 10px 0;
+}

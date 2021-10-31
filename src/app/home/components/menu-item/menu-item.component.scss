@@ -1,0 +1,54 @@
+#container-foot {
+  width: 100%;
+  height: 700px;
+
+  display: flex;
+  align-items: center;
+}
+
+#img-foot {
+  width: 45%;
+  height: 100%;
+  background-image: url("../../../../assets/foot.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#card-foot {
+  width: 90%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#container-description-calification-foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 55%;
+  padding: 20px;
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.button-view-more {
+  color: #cdcdcd;
+  cursor: pointer;
+}
+
+#container-calification {
+  color: #cdcdcd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    background: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 35px;
+    cursor: pointer;
+  }
+}

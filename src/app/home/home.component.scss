@@ -1,7 +1,26 @@
 #content {
-  width: 100%;
-  height: 500px;
-
+  padding: 0 70px;
   background-image: url("../../assets/bg.jpg");
   background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+#section-food {
+  width: 100%;
+}
+
+#section-question-comment {
+  width: 45%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+#container-question-comment {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

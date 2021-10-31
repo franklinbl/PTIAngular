@@ -1,0 +1,43 @@
+<div id="comment" class="shadow">
+  <ul>
+    <li *ngFor="let comment of comments">
+      <div id="container-photo-profile">
+        <img id="photo-profile" [src]="comment.userPhoto" alt="perfil" />
+      </div>
+      <p id="p1">
+        <strong>{{ comment.numberComment }}</strong>
+      </p>
+      <p id="p2">{{ comment.comment }}</p>
+      <div id="container-like-dislike">
+        <img
+          class="button-like-dislike"
+          (click)="likeDislike(comment, true)"
+          *ngIf="!comment.like"
+          src="../../../../assets/like.png"
+          alt="like"
+        />
+        <img
+          class="button-like-dislike"
+          *ngIf="comment.like"
+          (click)="likeDislike(comment, true)"
+          src="../../../../assets/likeAct.png"
+          alt="like"
+        />
+        <img
+          class="button-like-dislike"
+          *ngIf="!comment.dislike"
+          (click)="likeDislike(comment, false)"
+          src="../../../../assets/dislike.png"
+          alt="dislike"
+        />
+        <img
+          class="button-like-dislike"
+          *ngIf="comment.dislike"
+          (click)="likeDislike(comment, false)"
+          src="../../../../assets/dislikeAct.png"
+          alt="dislike"
+        />
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,34 @@
+<div id="container-foot">
+  <div id="card-foot" class="shadow">
+    <div id="img-foot"></div>
+    <div id="container-description-calification-foot">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac libero
+          nibh. Suspendisse non ullamcorper quam.
+          <span *ngIf="isViewMore">
+            Nullam interdum ac arcu vitae ultrices. Phasellus sit amet euismod
+            metus. Curabitur viverra turpis vel accumsan lobortis. Aenean
+            euismod felis eu urna varius convallis.
+          </span>
+        </p>
+        <span class="button-view-more" (click)="viewMore()" *ngIf="!isViewMore">
+          Ver mas...
+        </span>
+        <p *ngIf="isViewMore">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac libero
+          nibh. Suspendisse non ullamcorper quam. Nullam interdum ac arcu vitae
+          ultrices. Phasellus sit amet euismod metus. Curabitur viverra turpis
+          vel accumsan lobortis.
+        </p>
+        <span class="button-view-more" (click)="viewMore()" *ngIf="isViewMore">
+          Ver menos...
+        </span>
+      </div>
+      <div id="container-calification">
+        <p>Calificación 8.5/10</p>
+        <button>Visitar</button>
+      </div>
+    </div>
+  </div>
+</div>
