@@ -1,9 +1,9 @@
 #questions {
   background-color: #fff;
-  max-height: 60%;
+  height: 200px;
   overflow-y: auto;
   font-style: italic;
-  padding: 15px;
+  padding: 10px;
 }
 
 #questions::-webkit-scrollbar {
@@ -41,5 +41,9 @@ p {
   margin: 0 0 10px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  #questions {
+    height: 250px;
+    padding: 30px;
+  }
 }
